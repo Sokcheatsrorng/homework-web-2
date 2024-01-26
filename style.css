@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 550px;
+    margin-top: 30px;
+    
+}
+h1{
+    color:cadetblue;
+    font-size: xx-large;
+}
+.container{
+   justify-content: space-around;
+   width: 100%;
+   height: 100%;
+   display:flex;
+   position: relative;
+   padding: 50px;
+   border-radius: 20px;
+   background-color: rgba(175, 175, 175, 0.2);
+}
+.calender-img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+.calender-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.calender{
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+tr{
+    display: inline-block;  
+    margin-top: 5px;
+}
+table,th,td{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+ 
+  th,td:nth-child(1){
+    color:red;
+  }
+  th,td:nth-child(7){
+    color:red;
+  }
+td{
+    background-color: rgba(187, 187, 187, 0.1);
+    border-radius: 50%;
+    font-weight: bold;
+}
+td:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index:-1 ;
+}
+th:not(:first-child,:last-child){
+    color:inherit;
+}
+.firstRow >td:nth-child(1){
+    color:inherit;
+}
+.firstRow >td:not(:last-child, :nth-child(6)){
+    border: 0.5px solid  rgba(187, 187, 187, 0.5);
+    opacity: 0.6;
+}
+.lastRow >td:not(:first-child){
+    border: 0.5px solid  rgba(187, 187, 187, 0.5);
+    opacity: 0.6;
+}
+.lastRow >td:last-child{
+    color: inherit;
+}
+  table{
+    width: 100%;
+    height: 80%;
+  }
